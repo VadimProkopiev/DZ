@@ -2,15 +2,63 @@
 // что третьей цифры нет.Через строку решать нельзя.
 // 645 -> 5
 // 78 -> третьей цифры нет
-// 32679 -> 6
+// // 32679 -> 6
+Console.Write("Введите любое число - ");
+int x = Convert.ToInt32 ( Console.ReadLine());
 
-int x=new Random().Next(100, 100000000);
-Console.WriteLine(x);
+// Console.Write("Введите какую цифру слева надо показать - ");
+// int i = Convert.ToInt32 ( Console.ReadLine());
+if (1<x && x<100) Console.Write("Третьей цифры нет");
+int i = 0;
+int z = 0;
+int y = x/10;
+do
+{
+    z = y/10; 
+    if  (99<z && z<1000) Console.Write(y);
+    break;
+    i++;
+}
+while (i < x);
+// while (i < 4)
+// {
+//     int z = y/10 ;
+//     i++; 
+//     Console.WriteLine(z);
+//     }
+Console.WriteLine(z);
+
+// int number = ReadInt("Введите число: ");
+// int count = number.ToString().Length;
+// Console.Write(MakeArray(number, count));
 
 
-int a1 = x % 10;
+// // ФУНКЦИИ------------------------------------------------------------------------------------------------------
 
+// // Функция принимает сообщение для отображения в консоли, и выводит результат введенных данных пользователем.
+// int ReadInt(string message)
+// {
+//     Console.Write(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
 
-int new_num = x / 100 % 10;
+// // Функция принимает число введенное пользователем, количество символов, и выводит третью цифру числа. Если 3 цифры нет, сообщает и выводит 0.
+// int MakeArray(int a, int b)
+// {
+// int result = 0;
+//     if (b < 3)
+//     {
+//         Console.Write("Третьей цифры нет, держи: ");
+//     }
+//     else
+//     {
+//         int c = 1;
+//         for (int i = b; i > 3; i--)
+//         {
+//             c = c * 10;
+//         }
 
-Console.WriteLine($"Было {x}, стало {new_num}");
+//         result = (a / c) % 10;
+//     }
+// return result;
+// }
