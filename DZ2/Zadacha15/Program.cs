@@ -9,6 +9,3 @@ Console.WriteLine("Введите натуральное число дня не�
 int x=Convert.ToInt32 ( Console.ReadLine());
 if (x==6 || x==7) Console.WriteLine("Да это Выходной");
 else Console.WriteLine("Нет это будни");
-
-    
-
