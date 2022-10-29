@@ -3,3 +3,14 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
+
+int x=new Random().Next(100, 100000000);
+Console.WriteLine(x);
+
+
+int a1 = x % 10;
+
+
+int new_num = x / 100 % 10;
+
+Console.WriteLine($"Было {x}, стало {new_num}");
