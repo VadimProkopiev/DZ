@@ -5,3 +5,10 @@
 // 7 -> да
 // 1 -> нет
 
+Console.WriteLine("Введите натуральное число дня недели от 1 до 7 ");
+int x=Convert.ToInt32 ( Console.ReadLine());
+if (x==6 || x==7) Console.WriteLine("Да это Выходной");
+else Console.WriteLine("Нет это будни");
+
+    
+
