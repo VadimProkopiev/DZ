@@ -4,7 +4,7 @@
 // -3 -> нет
 // // 7 -> нет
 
- Console.WriteLine("Введите натуральное число ");
- int x=Convert.ToInt32 ( Console.ReadLine());
- if (x % 2 == 0) Console.WriteLine("Да");
- else if (x % 2 <= 1) Console.WriteLine("Нет");
+Console.WriteLine("Введите натуральное число ");
+int x = Convert.ToInt32(Console.ReadLine());
+if (x % 2 == 0) Console.WriteLine("Да");
+else if (x % 2 <= 1) Console.WriteLine("Нет");

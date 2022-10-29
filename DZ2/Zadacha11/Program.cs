@@ -4,9 +4,9 @@
 
 int x = new Random().Next(1, 1000000);
 
-int a1 = x % 10;
-int a3 = x / 100;
-
-int new_num = a3 * 10 + a1;
-
-Console.WriteLine($"Было {x}, стало {new_num}");
+{
+  int x = 10;
+  int* p = &x;
+  cout << "Address of i: " << p << endl;
+  cout << "Value of i: " << *p << endl; 
+}

@@ -1,1 +1,1 @@
-﻿https://github.com/VadimProkopiev/DZ.git
+﻿//github.com/VadimProkopiev/DZ.git
