@@ -9,7 +9,6 @@ int x=new Random().Next(100, 1000);
 Console.WriteLine(x);
 int x1=x/100;
 int x2=x/10 - ((x/100)*10);
-int x3=x%10;
 
 Console.Write(x2);
 
