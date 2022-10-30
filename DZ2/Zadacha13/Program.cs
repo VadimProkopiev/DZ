@@ -3,62 +3,24 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // // 32679 -> 6
+
 Console.Write("Введите любое число - ");
-int x = Convert.ToInt32 ( Console.ReadLine());
-
-// Console.Write("Введите какую цифру слева надо показать - ");
-// int i = Convert.ToInt32 ( Console.ReadLine());
-if (1<x && x<100) Console.Write("Третьей цифры нет");
-int i = 0;
-int z = 0;
-int y = x/10;
-do
+int n = Convert.ToInt32 ( Console.ReadLine());
+int NumLen = (int)Math.Log10(n) + 1;
+Console.WriteLine($"Количество цифр в числе,  {NumLen}");
+if (NumLen>1 && NumLen<3) Console.WriteLine("Третьей цифры нет");
+int i = 1;
+int x = 0;
+while (i <= NumLen)
 {
-    z = y/10; 
-    if  (99<z && z<1000) Console.Write(y);
+   n = n/10; 
+   
+   if (n>99 && n<1000)
+   {
+    x = n%10;
+    Console.Write(n +" ");
+    Console.Write("Тетья цифра, " + x);
     break;
-    i++;
+   } 
+   i++;
 }
-while (i < x);
-// while (i < 4)
-// {
-//     int z = y/10 ;
-//     i++; 
-//     Console.WriteLine(z);
-//     }
-Console.WriteLine(z);
-
-// int number = ReadInt("Введите число: ");
-// int count = number.ToString().Length;
-// Console.Write(MakeArray(number, count));
-
-
-// // ФУНКЦИИ------------------------------------------------------------------------------------------------------
-
-// // Функция принимает сообщение для отображения в консоли, и выводит результат введенных данных пользователем.
-// int ReadInt(string message)
-// {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
-// }
-
-// // Функция принимает число введенное пользователем, количество символов, и выводит третью цифру числа. Если 3 цифры нет, сообщает и выводит 0.
-// int MakeArray(int a, int b)
-// {
-// int result = 0;
-//     if (b < 3)
-//     {
-//         Console.Write("Третьей цифры нет, держи: ");
-//     }
-//     else
-//     {
-//         int c = 1;
-//         for (int i = b; i > 3; i--)
-//         {
-//             c = c * 10;
-//         }
-
-//         result = (a / c) % 10;
-//     }
-// return result;
-// }
