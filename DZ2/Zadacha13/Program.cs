@@ -18,7 +18,7 @@ while (i <= NumLen)
    if (n>99 && n<1000)
    {
     x = n%10;
-    Console.Write(n +" ");
+    Console.Write(n +" ");// Уменьшение числа до 3 символов
     Console.Write("Тетья цифра, " + x);
     break;
    } 
