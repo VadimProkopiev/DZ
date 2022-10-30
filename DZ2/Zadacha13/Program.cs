@@ -4,13 +4,20 @@
 // 78 -> третьей цифры нет
 // // 32679 -> 6
 
-Console.Write("Введите любое число - ");
-int n = Convert.ToInt32 ( Console.ReadLine());
+// Console.Write("Введите любое число - ");
+// int n = Convert.ToInt32 ( Console.ReadLine());
+int n=new Random().Next(1, 1000000);
+Console.WriteLine(n);
 int NumLen = (int)Math.Log10(n) + 1;
 Console.WriteLine($"Количество цифр в числе,  {NumLen}");
 if (NumLen>1 && NumLen<3) Console.WriteLine("Третьей цифры нет");
 int i = 1;
 int x = 0;
+if (n>99 && n<1000)
+   {
+    x = n%10;
+    Console.Write("Тетья цифра, " + x);
+    } 
 while (i <= NumLen)
 {
    n = n/10; 
