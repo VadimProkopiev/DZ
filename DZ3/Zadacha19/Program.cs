@@ -6,7 +6,8 @@
 // 14212 -> нет
 // 12821 -> да
 // 23432 -> да
-
+try
+{
 Console.WriteLine("Введите пятизначное число");
 int n = Convert.ToInt32 (Console.ReadLine());
 int NumLen = (int)Math.Log10(n) + 1;
@@ -21,3 +22,8 @@ int a4 = n%10;
 
 if (a1==a4 && a2==a3) Console.WriteLine("Число является палиндромом");
 else Console.WriteLine("Число не является палиндромом");
+}
+catch
+{
+    Console.WriteLine("Вы ввели некорhетный данные"); 
+}
