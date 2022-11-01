@@ -15,7 +15,6 @@ Console.WriteLine($"Количество цифр в числе,  {NumLen}");
 if (NumLen == 5) Console.WriteLine("Введено пятизначное число");
 else Console.WriteLine("Число не пятизначное");
 int a1 = n/10000;
-
 int a2 = n/1000 - n/10000*10;
 int a3 = n%100/10; 
 int a4 = n%10;
