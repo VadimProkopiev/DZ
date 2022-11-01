@@ -28,7 +28,7 @@
 // //SumNumbers(n);
 // Console.WriteLine(SumNumbers2(n));
 
-___________________________________________________________________
+
 // Задача 26: Напишите программу, которая принимает на вход 
 // число и выдаёт количество цифр в числе.
 // 456 -> 3
@@ -39,7 +39,7 @@ ___________________________________________________________________
 // double n = Convert.ToInt32 (Console.ReadLine());
 // int NumLen = (int)Math.Log10(n) + 1;
 // Console.WriteLine($"Количество цифр в числе,  {NumLen}");
-___________ 
+
 // Console.WriteLine("Введите 5ти значное число: ");
 // int x=Convert.ToInt32(Console.ReadLine()) ;
 
@@ -52,8 +52,8 @@ ___________
 //       while ((x /= 10) >= 1) 
 //     i=i+1;
 //     Console.WriteLine($"Число символов {i}");
-//   //Длина числа равна i;
-___________
+// //Длина числа равна i;
+
 // Console.WriteLine("Введите число");
 // int num = Convert.ToInt32(Console.ReadLine());
 // SumNumbers(num);
@@ -76,5 +76,66 @@ ___________
 //     }
 //     Console.WriteLine(razryad);
 // }
-___________________________________________________________________
+// ___________________________________________________________________
 
+// Задача 28: Напишите программу, которая принимает на вход число N
+//  и выдаёт произведение чисел от 1 до N.
+// 4 -> 24 
+// 5 -> 120
+
+// Console.WriteLine("Введите целое число");
+// int n = Convert.ToInt32(Console.ReadLine());
+// // int sum=0;
+// // for (int i =1; i<=n;i++) sum=sum+i;
+// // Console.WriteLine($"Сумма всех чисел от 1 до {n} равна {sum}");
+
+// void SumNumbers(int n)
+// {
+//     int a = 1;
+//     for (int i =1; i<=n; i++) 
+//         a=a*i;
+//     Console.WriteLine($"Произведение всех чисел от 1 до {n} равна {a}");
+// }
+
+// SumNumbers(n);
+// _______________________
+// Задача 30: Напишите программу, которая выводит массив из 8 элементов,
+//  заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
+
+// int[] array = new int[8];
+// void FillArray(int[] collection)
+// {
+//     int lenght = 8;
+//     int index = 0;
+//     while (index<lenght)
+// {
+//     collection[index] = new Random().Next(0,2);
+//     index++;
+// }
+// }
+// void PrintArray(int[] array)
+// {
+//     int count = 8;
+//     for ( int i = 0; i < count; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
+// FillArray(array);
+// PrintArray(array);
+// int p=0;
+// int e=0;
+// int count = 8;
+// for (int i=0; i<count; i++)
+// { 
+//     if (array[i] == 1) p =p+1;
+// }
+// for (int i=0; i<count; i++)
+// { 
+//     if (array[i] == 0) e =e+1;
+// }
+// if (p>e) Console.WriteLine($"Колличество единиц больше нулей, {p}");
+// else Console.WriteLine($"Колличество нулей больше единиц, {e}");
+// ______________________________________
