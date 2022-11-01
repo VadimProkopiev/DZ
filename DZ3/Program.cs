@@ -103,9 +103,9 @@
 // 5 -> 1, 4, 9, 16, 25.
 // 2 -> 1,4
 
- Console.WriteLine("Введите n");
- int n = Convert.ToInt32(Console.ReadLine());
+//  Console.WriteLine("Введите n");
+//  int n = Convert.ToInt32(Console.ReadLine());
 
- for (int i = 1; i <= n; i++)
- Console.Write($"{i*i} ");
+//  for (int i = 1; i <= n; i++)
+//  Console.Write($"{i*i} ");
 
