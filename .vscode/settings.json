@@ -1,0 +1,6 @@
+{
+    "razor.languageServer.debug": false,
+    "razor.devmode": true,
+    "razor.format.enable": true,
+    "razor.trace": "Messages"
+}
