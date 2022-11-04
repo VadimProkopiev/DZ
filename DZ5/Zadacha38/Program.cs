@@ -8,7 +8,7 @@ double [] arr = {302.55 , 75.44, 22.66, 233.66 , 78.64, 54.46};
 
 void PrintArray(double[] array)
 {
-    double count = array.Length;
+    int count = array.Length;
     for ( int i = 0; i < count; i++)
     {
         Console.Write($"{array[i]}, ");
