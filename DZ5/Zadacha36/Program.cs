@@ -4,12 +4,13 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
+
 int[] CreateFillArray()
 {
-    int[] arr = new int[13];
-    for (int i=0;i<13;i++) 
+    int[] arr = new int[6];
+    for (int i=0;i<6;i++) 
     {
-        arr[i]= new Random().Next(-100000,100000);
+        arr[i]= new Random().Next(-10000,10000);
         Console.Write($"{arr[i]} ");
     }
     Console.WriteLine();
@@ -18,13 +19,15 @@ int[] CreateFillArray()
 void FindCount(int[] arr)
 {
     int count=0;
-    foreach (int el in arr)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (count%2 == 0 ) el = el+ el[count]; 
-        count++;
+        if (i%2 == 1)  count =  count + arr[i];
+               
     }
     Console.WriteLine(count);
+     
 }
 int [] arr = CreateFillArray();
+
 FindCount(arr); 
 
