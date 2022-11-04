@@ -1,0 +1,5 @@
+git add --all
+git commit -m "Write cod Zadacha 34"
+git push
+dotnet run
+dotnet new console

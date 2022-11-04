@@ -14,16 +14,18 @@ int[] CreateFillArray()
     Console.WriteLine();
     return arr;
 }
-
 void FindCount(int[] arr)
 {
     int count=0;
     foreach (int el in arr)
     {
-        if (el%2 == 0 ) count++;
+        if (el%2 == 0) count++;
     }
     Console.WriteLine(count);
 }
 int [] arr = CreateFillArray();
-FindCount(arr); 
+
+Console.WriteLine ("Колличество чётных чисел в массиве равна. "); 
+FindCount(arr);
+
 
