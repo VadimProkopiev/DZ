@@ -2,5 +2,10 @@
     "razor.languageServer.debug": false,
     "razor.devmode": true,
     "razor.format.enable": true,
-    "razor.trace": "Messages"
+    "razor.trace": "Messages",
+    "csharp.suppressProjectJsonWarning": true,
+    "omnisharp.analyzeOpenDocumentsOnly": true,
+    "omnisharp.disableMSBuildDiagnosticWarning": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.enableMsBuildLoadProjectsOnDemand": true
 }
