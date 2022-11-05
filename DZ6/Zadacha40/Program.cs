@@ -4,11 +4,11 @@
 // по нему - площадь, периметр, значения углов треугольника в 
 // градусах, является ли он прямоугольным, равнобедренным, равносторонним.
 
-Console.WriteLine("Введите первое число ");
+Console.WriteLine("Введите первую сторону треугольника ");
 double x=Convert.ToInt32 ( Console.ReadLine());
-Console.WriteLine("Введите второе число ");
+Console.WriteLine("Введите вторую сторону треугольник ");
 double y=Convert.ToInt32 ( Console.ReadLine());
-Console.WriteLine("Введите третье число ");
+Console.WriteLine("Введите третью сторону треугольник ");
 double z=Convert.ToInt32 ( Console.ReadLine());
 
 if (x>y+z || y>x+z || z>x+y) Console.WriteLine("Такой треугольник не существует");

@@ -3,3 +3,5 @@
 
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
+Console.WriteLine("Введите колличество M чисел, ");
+double M=Convert.ToInt32 ( Console.ReadLine());
