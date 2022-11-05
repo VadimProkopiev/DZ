@@ -32,14 +32,14 @@ double FindCorner ()
     if (alfaDeg==betaDeg || betaDeg==gamaDeg || gamaDeg==alfaDeg) Console.WriteLine("Такой треугольник является равнобедренным");
     return alfa;
 }
-double FindParametrs ()
+void FindParametrs ()
 { 
     double p = (x+y+z)/2; 
     double S = Math.Sqrt(Math.Abs(p*(p-x)*(p-y)*(p-z))); 
     S = Math.Round(S, 2);
     Console.WriteLine($"Площадь треугольника = {S}");
     Console.WriteLine($"Периметр треугольника = {x+y+z}");
-    return p;
+  
 }
 FindCorner();
 FindParametrs();
