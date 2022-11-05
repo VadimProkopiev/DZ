@@ -29,7 +29,7 @@ double FindCorner ()
     Console.WriteLine($"Угол gama треугольника = {gamaDeg}");
     if (alfaDeg == 90 || betaDeg == 90 || gamaDeg == 90) Console.WriteLine("Такой треугольник является прямоугольным");
     if (x == y && y == z && z== x) Console.WriteLine("Такой треугольник является равносторонним");
-    if (alfaDeg==betaDeg || betaDeg==gamaDeg || gamaDeg==alfaDeg) Console.WriteLine("Такой треугольник является равнобедренным");
+    if (alfaDeg==betaDeg && betaDeg!=gamaDeg || betaDeg==gamaDeg && gamaDeg!=alfaDeg || gamaDeg==alfaDeg && betaDeg!=alfaDeg ) Console.WriteLine("Такой треугольник является равнобедренным");
     return alfa;
 }
 void FindParametrs ()
