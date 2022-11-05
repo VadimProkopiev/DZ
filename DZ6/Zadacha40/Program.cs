@@ -34,11 +34,16 @@ double FindCorner ()
 }
 void FindParametrs ()
 { 
-    double p = (x+y+z)/2; 
-    double S = Math.Sqrt(Math.Abs(p*(p-x)*(p-y)*(p-z))); 
-    S = Math.Round(S, 2);
-    Console.WriteLine($"Площадь треугольника = {S}");
-    Console.WriteLine($"Периметр треугольника = {x+y+z}");
+    if (x>y+z || y>x+z || z>x+y) Console.WriteLine("Такой треугольник не существует");
+    
+    else Console.WriteLine("Такой треугольник существует");
+    {
+        double p = (x+y+z)/2; 
+        double S = Math.Sqrt(Math.Abs(p*(p-x)*(p-y)*(p-z))); 
+        S = Math.Round(S, 2);
+        Console.WriteLine($"Площадь треугольника = {S}");
+        Console.WriteLine($"Периметр треугольника = {x+y+z}");
+    }
   
 }
 FindCorner();
