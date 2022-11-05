@@ -14,3 +14,11 @@ double b2=Convert.ToInt32 ( Console.ReadLine());
 Console.WriteLine("Введите значение k2, ");
 double k2=Convert.ToInt32 ( Console.ReadLine());
 
+
+var x = -(b1 - b2) / (k1 - k2);
+var y = k1 * x + b1;
+ 
+x = Math.Round(x, 3);
+y = Math.Round(y, 3);
+ 
+Console.WriteLine($"Пересечение в точке: ({x};{y})");
