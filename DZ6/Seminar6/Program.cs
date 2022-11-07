@@ -6,7 +6,7 @@
 // int[] CreateFillArray()
 // {
 //     int[] arr = new int[13];
-//     for (int i=0;i<13;i++) 
+//     for (int i=0;i<13;i++)
 //     {
 //         arr[i]= new Random().Next(0,100);
 //         Console.Write($"{arr[i]} ");
@@ -42,7 +42,7 @@
 // ReversArray(mas);
 
 // _______________________________________________________________________
-// Задача 40: Напишите программу, которая принимает на вход три числа и проверяет, 
+// Задача 40: Напишите программу, которая принимает на вход три числа и проверяет,
 // может ли существовать треугольник с сторонами такой длины.
 
 // Console.WriteLine("Введите первое число ");
@@ -108,14 +108,14 @@
 // __________
 // int n= Convert.ToInt32(Console.ReadLine());
 // int[] array = new int[n];
-  
-//     for (int i=0;i<n;i++) 
+
+//     for (int i=0;i<n;i++)
 //     {
 //         if (i == 0) array[i]=0;
 //         else if (i == 1) array[i]=1;
 //         else array[i] = array[i-1]+array[i-2];
 //     }
-   
+
 //    void PrintArray(int[] array)
 // {
 //     int count = array.Length;
@@ -128,15 +128,15 @@
 // PrintArray(array);
 
 // _______________________________________________________________________________________________
-//  Задача 45: Напишите программу, которая будет создавать копию 
+//  Задача 45: Напишите программу, которая будет создавать копию
 // заданного массива с помощью поэлементного копирования.
 
 int[] CreateFillArray()
 {
     int[] arr = new int[13];
-    for (int i=0;i<13;i++) 
+    for (int i = 0; i < 13; i++)
     {
-        arr[i]= new Random().Next(0,100);
+        arr[i] = new Random().Next(0, 100);
         Console.Write($"{arr[i]} ");
     }
     Console.WriteLine();
@@ -146,18 +146,15 @@ int[] CreateFillArray()
 void PrintArray(int[] array)
 {
     int count = 13;
-    for ( int i = 0; i < count; i++)
+    for (int i = 0; i < count; i++)
     {
         Console.Write($"{array[i]} ");
     }
     Console.WriteLine();
 }
 
-
 int[] mas = CreateFillArray();
-int[] mas2=mas;
-mas[0]=999;
+int[] mas2 = mas;
+mas[0] = 999;
 PrintArray(mas);
 PrintArray(mas2);
-
-

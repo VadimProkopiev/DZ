@@ -41,9 +41,9 @@ void FindMaxMinNumber()
     int maxindj = 0;
     int minindi = 0;
     int minindj = 0;
-    for (int i = 0; i < m ; i++)
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < n ; j++)
+        for (int j = 0; j < n; j++)
         {
             if (matr[i, j] > max)
             {
@@ -51,13 +51,12 @@ void FindMaxMinNumber()
                 maxindi = i;
                 maxindj = j;
             }
-                
         }
     }
 
-    for (int i = 0; i < m ; i++)
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < n ; j++)
+        for (int j = 0; j < n; j++)
         {
             if (matr[i, j] < min)
             {
@@ -65,14 +64,12 @@ void FindMaxMinNumber()
                 minindi = i;
                 minindj = j;
             }
-                
         }
     }
 
     Console.WriteLine($"Минимальное число - {min}");
-     Console.WriteLine($"Индекс минимального числа - m = {minindi}, n = {minindj}");
+    Console.WriteLine($"Индекс минимального числа - m = {minindi}, n = {minindj}");
     Console.WriteLine($"Максимальное число - {max}");
     Console.WriteLine($"Индекс максимального числа - m = {maxindi}, n = {maxindj}");
-    
 }
 FindMaxMinNumber();
