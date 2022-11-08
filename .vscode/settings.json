@@ -7,5 +7,8 @@
     "omnisharp.analyzeOpenDocumentsOnly": true,
     "omnisharp.disableMSBuildDiagnosticWarning": true,
     "omnisharp.enableRoslynAnalyzers": true,
-    "omnisharp.enableMsBuildLoadProjectsOnDemand": true
+    "omnisharp.enableMsBuildLoadProjectsOnDemand": true,
+    "omnisharp.organizeImportsOnFormat": true,
+    "omnisharp.waitForDebugger": true,
+    "razor.disabled": true
 }
