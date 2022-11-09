@@ -71,20 +71,6 @@ void SortSumRow(int[,] mas)
     Console.WriteLine($"Строка с минимальной суммой элементов равна {line}. индекс = {index} ");
 }
 
-       
-     
-    
-       
-           
-
-
-
-
-
-
-
-
-
 SortSumRow(mas);
 
 
