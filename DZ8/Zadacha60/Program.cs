@@ -16,31 +16,32 @@ int z = Convert.ToInt32(Console.ReadLine());
 
 int[,,] Fillimageay(int x, int y, int z)
 {
-    int[,,] mat = new int[x,y,z];
-    for (int i=0;i<mat.GetLength(0);i++)
+    int[,,] mas = new int[x,y,z];
+    for (int i=0;i<mas.GetLength(0);i++)
     {
-        for (int j=0;j<mat.GetLength(1);j++)
+        for (int j=0;j<mas.GetLength(1);j++)
         {
-            for (int k=0;k<mat.GetLength(2);k++)
+            for (int k=0;k<mas.GetLength(2);k++)
             {
-               mat[i,j,k] = new Random().Next(0, 10); 
+               mas[i,j,k] = new Random().Next(0, 100); 
             }
             
         }
     }
     Console.WriteLine();
-    return mat;
+    return mas;
 }
 
-void Printimageay(int[,] image)
+void Printimageay(int[,,] image)
 {
     for (int i = 0; i < image.GetLength(0); i++)
     {
         for (int j = 0; j < image.GetLength(1); j++)
         {
-            for (int k=0;k<mat.GetLength(2);k++)
+            for (int k=0;k<image.GetLength(2);k++)
             {
                Console.Write($"{image[i, j, k]} \t");
+               Console.WriteLine($"число массива = {image[i, j, k]} индексы числа ({i}, {j}, {k}) ");
             }
             
         }
@@ -48,8 +49,9 @@ void Printimageay(int[,] image)
     }
 }
 int [,,] mas = Fillimageay(x,y,z);
+Printimageay(mas);
 
-Console.WriteLine();
+
 
 // void SortSumRow(int[,] mas)
 // {
