@@ -47,7 +47,7 @@ void SelectionSortRow(int[,] image)
     {
         for ( int j = 0; j < image.GetLength(1) ; j++)
         {
-            for (int k = 0; k < image.GetLength(1) - j-1 ;k++) 
+            for (int k = 0; k < image.GetLength(1) -j-1 ;k++) 
                 {
                     if (image[i, k] > image[i, k + 1]) 
                     {
@@ -85,7 +85,7 @@ void transpose(int[, ] mat)
     {
         for (int i = 0; i < mat.GetLength(0); i++) 
         {
-            for (int j = i + 1; j < mat.GetLength(1); j++) 
+            for (int j = i + 1; j > mat.GetLength(1); j++) 
             {
                 int temp = mat[i, j];
                 mat[i, j] = mat[j, i];
@@ -97,27 +97,14 @@ void transpose(int[, ] mat)
 int [,] mas = Fillimageay(m, n);
 Printimageay(mas);
 Console.WriteLine();
-SelectionSortRow(mas);
-int [] mas1= new int [m*n];
-foreach (int i in mas)
+
+for (int i = 0; i < m*n; i++)
 {
     
-    Console.Write($"{i} ");
-    if (mas1 < i) 
-    {
-        int t = image[k, l];
-        image[k, l] = image[k+1, l];
-        image[k + 1, l ] = t;
-    }
+    SelectionSortCol(mas);
+   
+    SelectionSortRow(mas);
+          
 }
-
-
-
-
-
-
-
-// Printimageay(mas);
-
-
-// ________________________________________________________________________
+Console.WriteLine();
+Printimageay(mas);
