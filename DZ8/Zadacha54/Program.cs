@@ -72,3 +72,4 @@ SelectionSortRow(mas);
 
 
 Printimageay(mas);
+

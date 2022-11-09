@@ -1,5 +1,5 @@
 {
-    "razor.languageServer.debug": false,
+    "razor.languageServer.debug": true,
     "razor.devmode": true,
     "razor.format.enable": true,
     "razor.trace": "Messages",
@@ -10,5 +10,9 @@
     "omnisharp.enableMsBuildLoadProjectsOnDemand": true,
     "omnisharp.organizeImportsOnFormat": true,
     "omnisharp.waitForDebugger": true,
-    "razor.disabled": true
+    "razor.disabled": true,
+    "omnisharp.loggingLevel": "error",
+    "csharp.suppressDotnetInstallWarning": true,
+    "csharp.suppressDotnetRestoreNotification": true,
+    "csharp.suppressBuildAssetsNotification": true
 }
