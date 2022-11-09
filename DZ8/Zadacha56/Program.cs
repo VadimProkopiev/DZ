@@ -68,7 +68,7 @@ void SortSumRow(int[,] mas)
     {
         line += mas[index, j] + " ";
     }
-    Console.WriteLine($"Строка с минимальной суммой элементов равна {line}. индекс = {index} ");
+    Console.WriteLine($"Строка с минимальной суммой элементов равна {line}. индекс = {index}, строка {index+1} ");
 }
 
 SortSumRow(mas);
