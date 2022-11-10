@@ -4,7 +4,7 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
- Console.Write ("Введите целое число ");
+Console.Write ("Введите целое число ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 string SumRec(int n)
