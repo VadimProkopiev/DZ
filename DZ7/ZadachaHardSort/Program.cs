@@ -17,6 +17,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 int [,] mas = Fillimageay(m, n);
 Printimageay(mas);
 Console.WriteLine();
+
 int[,] Fillimageay(int m, int n)
 {
     int[,] image = new int[m,n];
@@ -42,15 +43,21 @@ void Printimageay(int[,] image)
         Console.WriteLine();
     }
 }
-int[] m1 = new int[m*n];
-int z=0;
-for (int i = 0; i < mas.GetLength(0); i++)
+
+int [] m1 = new int[m*n];
+
+void ChangeArray2ToArray1 (int [] m1)
 {
-    for (int j = 0; j < mas.GetLength(1); j++)
+    
+    int z=0;
+    for (int i = 0; i < mas.GetLength(0); i++)
+    {
+        for (int j = 0; j < mas.GetLength(1); j++)
         {
             m1[z] = mas[i, j];
             z++;
         } 
+    }
 }
             
 void SelectionSort(int[] m1)
@@ -78,11 +85,6 @@ void PrintArray(int[] m1)
     }
     Console.WriteLine();
 }
-
-PrintArray(m1);
-SelectionSort(m1);
-PrintArray(m1);
-
 void PrintArr(int[] m1)
 {
     for ( int i = 0; i < m1.Length; i++)
@@ -94,4 +96,8 @@ void PrintArr(int[] m1)
     
 }
 
+ChangeArray2ToArray1(m1);
+PrintArray(m1);
+SelectionSort(m1);
+PrintArray(m1);
 PrintArr(m1);
