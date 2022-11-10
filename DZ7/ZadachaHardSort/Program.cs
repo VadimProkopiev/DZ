@@ -42,97 +42,56 @@ void Printimageay(int[,] image)
         Console.WriteLine();
     }
 }
-
-
-void SelectionSortRow(int[,] image)
+int[] m1 = new int[m*n];
+int z=0;
+for (int i = 0; i < mas.GetLength(0); i++)
 {
-    for (int i =0; i< image.GetLength(0); i++)
-    {
-        for ( int j = 0; j < image.GetLength(1) ; j++)
+    for (int j = 0; j < mas.GetLength(1); j++)
         {
-            for (int k = 0; k < image.GetLength(1)-jgit-1 ;k++) 
-                {
-                    for (int l =0; l< image.GetLength(1);l++)
-                    {
-                       if (image[k, l] > image[k+1, l]) 
-                        {
-                           int t = image[k, l];
-                           image[k, l] = image[k+1, l];
-                           image[k + 1, l ] = t;
-                        } 
-                       
-                    }
-                    if (image[i, k] > image[i, k + 1]) 
-                    {
-                        int t = image[i, k];
-                        image[i, k] = image[i, k + 1];
-                        image[i, k + 1] = t;
-                    }
-                    
-                    
-                }
-        }
-    }
+            m1[z] = mas[i, j];
+            z++;
+        } 
 }
-
-
-
-void SelectionSortCol(int[,] image)
+            
+void SelectionSort(int[] m1)
 {
-    for (int j =0; j< image.GetLength(1); j++)
+    for (int i =0; i< m1.Length-1; i++)
     {
-        for ( int i = 0; i < image.GetLength(0) ; i++)
+        int minPosition = i;
+        for ( int j = i+1; j < m1.Length ; j++)
         {
-            for (int k = 0; k < image.GetLength(1) - i-1 ;k++) 
-                {
-                   for (int l =0; l< image.GetLength(1);l++)
-                    if (image[k, l] > image[k+1, l]) 
-                    {
-                        int t = image[k, l];
-                        image[k, l] = image[k+1, l];
-                        image[k + 1, l ] = t;
-                    }
-                }
+            if(m1[j] < m1[minPosition]) minPosition = j; 
+            
         }
-    }
-}
-void transpose(int[, ] image)
-    {
-        for (int i = 0; i < image.GetLength(0); i++) 
-        {
-            for (int j = i + 1; j > image.GetLength(1); j++) 
-            {
-                int temp = image[i, j];
-                image[i, j] = image[j, i];
-                image[j, i] = temp;
-            }
-        }
+
+        int temporary = m1[i];
+        m1[i] = m1[minPosition];
+        m1[minPosition] = temporary;
     }
 
-
-for (int i = 0; i < m*n; i++)
-{
-    
-    SelectionSortRow(mas);
-    SelectionSortRow(mas);
-    // transpose(mas);
-    // SelectionSortCol(mas);
-
-          
 }
-Console.WriteLine();
-Printimageay(mas);
+void PrintArray(int[] m1)
+{
+    for ( int i = 0; i < m1.Length; i++)
+    {
+        Console.Write($"{m1[i]} ");
+    }
+    Console.WriteLine();
+}
 
-// int z = m*n;
-// int[] mas1 = new int[z];
+PrintArray(m1);
+SelectionSort(m1);
+PrintArray(m1);
 
-// for (int i = 0; i < 10; i++)
-// {
-//     for (int j = 0; j < 10; j++)
-//     {
-//         mas1[z++] = mas[i, j];
+void PrintArr(int[] m1)
+{
+    for ( int i = 0; i < m1.Length; i++)
+    {
        
-//     }
-// }
-                
-// Console.WriteLine(mas1);
+       if ((i)%n ==0) Console.WriteLine(); 
+       Console.Write($" {m1[i]} \t");
+    }
+    
+}
+
+PrintArr(m1);
